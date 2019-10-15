@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout } from './components/Layout'
-import styles from './styles.less'
+import styles from './less/styles.less'
 export const App = () => {
   return(
     <Layout>
