@@ -6,14 +6,71 @@
 @color-border: @color-brand;
 
 //colors
-@color-grey: #737373;
+@color-grey: #777777;
 @color-alert: rgb(218,0,0);
+
+@color-grey-dark: darken(@color-grey, 35%);
+@color-grey-darker: darken(@color-grey, 45%);
+
+@color-grey-light: lighten(@color-grey, 35%);
+@color-grey-lighter: lighten(@color-grey, 45%);
+
+@color-desaturate: desaturate(@color-brand, 20%);
+@color-spin: spin(@color-brand, 80);
+
+@color-grey-substract: #666 - #555;
+@color-grey-add: #222 + #555;
+
+
 
 //button
 @button-txt: #ffffff;
 @button-bg: @color-brand;
 
+//fonts
+@basefont: 'Quicksand', sans-serif;
+@basefontsize: 16px;
+@baseheadingfont: @basefont;
+@baseheadingfontweight: bold;
+@altfont: Georgia, Times, "Times Nes Roman";
+@codefont: "Courier New", monospace;
+@lineheight: 1.5;
+@textcolor: #000000;
+
+
 //const
 @page-max-width: 1024px;
 @elem-padding: 12px;
 @container-padding: @elem-padding * 2;
+
+.title{
+  color: @color-grey;
+  &-dark{
+    color: @color-grey-dark;
+    &er{
+      color: @color-grey-darker;
+    }
+  }
+  &-light{
+    color: @color-grey-light;
+    &er{
+      color: @color-grey-lighter;
+    }
+  }
+  &-add{
+    color: @color-grey-add;
+  }
+  &-color{
+    color: @color-brand;
+    &-desaturate{
+      color: @color-desaturate;
+    }
+    &-spin {
+      color: @color-spin;
+    }
+  }
+  &-substract{
+    color: @color-grey-substract;
+
+  }
+}

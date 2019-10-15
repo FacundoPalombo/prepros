@@ -1,0 +1,49 @@
+p {
+  font-size: 1em;
+  color: #ea83ee;
+}
+h1 {
+  color: #dbd879;
+}
+.btn {
+  display: inline-block;
+  line-height: 2.2;
+  color: #ffffff;
+  text-align: center;
+  background-color: #ea83ee;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.btn:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.btn--alert {
+  background-color: #da0000;
+}
+.container {
+  padding: 24px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container--landing {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.align-right {
+  text-align: right;
+}
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.margin-bottom {
+  margin-bottom: 12px;
+}
